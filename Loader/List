@@ -1,9 +1,23 @@
 local List = {
-	["Counter Blox"] = {
-		["1.1"] = "",
-		["2.0"] = "",
-		["3.1"] = "",
+	{
+		Name = "Counter Blox",
+		Versions = {
+			{
+				Index = "1.1",
+				Link = "https://raw.githubusercontent.com/uedan228/HappyHub/refs/heads/main/Counter%20Blox/Version/2.0",
+				Function = "fdfdgfdsdfsdffgdfgfggrdgfdfgf"
+			},
+			{
+				Index = "2.0",
+				Link = "https://raw.githubusercontent.com/uedan228/HappyHub/refs/heads/main/Counter%20Blox/Version/2.0",
+				Function = "fdfdgfdfgdfgsdfsdffggrdgfdfgf"
+			},
+			{
+				Index = "3.0",
+				Link = "",
+				Function = "fdfdgsdfsdffdfgdfgfggrdgfdfgf"
+			},
+		}
 	},
 }
-
 return List
