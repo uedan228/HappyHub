@@ -4,7 +4,7 @@ local List = {
 		Versions = {
 			{
 				Index = "1.1",
-				Link = "https://raw.githubusercontent.com/uedan228/HappyHub/refs/heads/main/Counter%20Blox/Version/2.0",
+				Link = "https://raw.githubusercontent.com/uedan228/HappyHub/refs/heads/main/Counter%20Blox/Version/1.1",
 				Function = "fdfdgfdsdfsdffgdfgfggrdgfdfgf"
 			},
 			{
@@ -14,7 +14,7 @@ local List = {
 			},
 			{
 				Index = "3.0",
-				Link = "",
+				Link = "https://raw.githubusercontent.com/uedan228/HappyHub/refs/heads/main/Counter%20Blox/Version/3.0",
 				Function = "fdfdgsdfsdffdfgdfgfggrdgfdfgf"
 			},
 		}
