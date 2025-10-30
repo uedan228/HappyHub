@@ -3,19 +3,19 @@ local List = {
 		Name = "Counter Blox",
 		Versions = {
 			{
-				Index = "1.1",
-				Link = "https://raw.githubusercontent.com/uedan228/HappyHub/refs/heads/main/Counter%20Blox/Version/1.1",
-				Function = "fdfdgfdsdfsdffgdfgfggrdgfdfgf"
-			},
-			{
 				Index = "2.0",
 				Link = "https://raw.githubusercontent.com/uedan228/HappyHub/refs/heads/main/Counter%20Blox/Version/2.0",
-				Function = "fdfdgfdfgdfgsdfsdffggrdgfdfgf"
+				Function = "[+] Aim Assist (Aimbot \ Silent Aim \ HitBox \ TriggerBot)\n[+] Esp (Box \ Tracar \ HpBar)\n[+] Chams (Team \ Enemy \ Arm \ Wepon)\n[+] Visuals (Third Person \ Fov \ Skin Changer \ Bullet Tracer \ ViewModel \ World Color \ Gui Color\ Tab+)\n[+] Expoit (Mod Gun \ Wall Bang \ Kill all \ Knife Bot)\n[+] Movement (Bhop\ Speed \ Teleport \ Fly \ Noclip \ AntiAim \ Jitter \ Pitch \SpinBot \ Fake Duck)\n[+] Misc (Remove \ Buy AnyWhere \ inf BuyTime)"
+			},
+			{
+				Index = "1.1",
+				Link = "https://raw.githubusercontent.com/uedan228/HappyHub/refs/heads/main/Counter%20Blox/Version/1.1",
+				Function = "[+] Aimbot\n[+] Esp\n[+] Fly\n[+] Bhop\n[+] Noclip\n[+] Spin Bot\n[+] Rage Bot\n[+] Kill All\n[+] Anti Aim\n[+] Inf Ammo\n[+] Auto Fire\n[+] Fast Fire\n[+] Fast Equip\n[+] Fast Reload\n[+] No Spread\n[+] Wall Shoot\n[+] and more"
 			},
 			{
 				Index = "3.0",
 				Link = "https://raw.githubusercontent.com/uedan228/HappyHub/refs/heads/main/Counter%20Blox/Version/3.0",
-				Function = "fdfdgsdfsdffdfgdfgfggrdgfdfgf"
+				Function = "Coming soon..."
 			},
 		}
 	},
