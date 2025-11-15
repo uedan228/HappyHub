@@ -1,3 +1,4 @@
+local workspace = game:GetService("Workspace")
 local a = {}
 a["2"] = Instance.new("Folder", gethui())
 a["2"]["Name"] = [[Main Script]]
