@@ -1,6 +1,11 @@
 local workspace = game:GetService("Workspace")
+local runS = game:GetService("RunService")
+local pl = game:GetService("Players")
+local lp = pl.LocalPlayer
+local PlayerGui = lp:WaitForChild("PlayerGui")
+
 local a = {}
-a["2"] = Instance.new("Folder", gethui())
+a["2"] = Instance.new("Folder", runS:IsStudio()  and PlayerGui or gethui())
 a["2"]["Name"] = [[Main Script]]
 a["3"] = Instance.new("ScreenGui", a["2"])
 a["3"].Enabled = false
@@ -119,7 +124,7 @@ a["16"]["TextSize"] = 14
 a["16"]["TextXAlignment"] = Enum.TextXAlignment.Left
 a["16"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 a["16"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["16"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 a["16"]["BackgroundTransparency"] = 1
 a["16"]["Size"] = UDim2.new(1, 0, 1, 0)
@@ -154,7 +159,7 @@ a["1c"]["BorderSizePixel"] = 0
 a["1c"]["TextSize"] = 14
 a["1c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 a["1c"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["1c"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 a["1c"]["BackgroundTransparency"] = 1
 a["1c"]["Size"] = UDim2.new(1, 0, 1, 0)
@@ -187,7 +192,7 @@ a["22"]["BorderSizePixel"] = 0
 a["22"]["TextSize"] = 14
 a["22"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 a["22"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["22"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 a["22"]["BackgroundTransparency"] = 1
 a["22"]["Size"] = UDim2.new(1, 0, 1, 0)
@@ -212,7 +217,7 @@ a["27"]["TextSize"] = 14
 a["27"]["TextXAlignment"] = Enum.TextXAlignment.Left
 a["27"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 a["27"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["27"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 a["27"]["BackgroundTransparency"] = 1
 a["27"]["AnchorPoint"] = Vector2.new(0, 0.5)
@@ -259,7 +264,7 @@ a["2d"]["BorderSizePixel"] = 0
 a["2d"]["TextSize"] = 14
 a["2d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 a["2d"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["2d"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 a["2d"]["BackgroundTransparency"] = 1
 a["2d"]["Size"] = UDim2.new(1, 0, 0.333, 0)
@@ -271,7 +276,7 @@ a["2e"]["BorderSizePixel"] = 0
 a["2e"]["TextSize"] = 14
 a["2e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 a["2e"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["2e"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 a["2e"]["BackgroundTransparency"] = 1
 a["2e"]["Size"] = UDim2.new(1, 0, 0.333, 0)
@@ -284,7 +289,7 @@ a["30"]["BorderSizePixel"] = 0
 a["30"]["TextSize"] = 14
 a["30"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 a["30"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["30"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 a["30"]["BackgroundTransparency"] = 1
 a["30"]["Size"] = UDim2.new(1, 0, 0.333, 0)
@@ -296,7 +301,7 @@ a["31"]["BorderSizePixel"] = 0
 a["31"]["TextSize"] = 12
 a["31"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 a["31"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["31"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 a["31"]["BackgroundTransparency"] = 1
 a["31"]["Size"] = UDim2.new(1, 0, 1, 0)
@@ -320,7 +325,7 @@ a["35"]["TextSize"] = 14
 a["35"]["TextXAlignment"] = Enum.TextXAlignment.Left
 a["35"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 a["35"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["35"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 a["35"]["BackgroundTransparency"] = 1
 a["35"]["Size"] = UDim2.new(1, -30, 0, 18)
@@ -351,7 +356,7 @@ a["39"]["BorderSizePixel"] = 0
 a["39"]["TextSize"] = 14
 a["39"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 a["39"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["39"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 a["39"]["BackgroundTransparency"] = 1
 a["39"]["AnchorPoint"] = Vector2.new(0.5, 0.5)
@@ -378,7 +383,7 @@ a["3d"]["BorderSizePixel"] = 0
 a["3d"]["TextSize"] = 14
 a["3d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 a["3d"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["3d"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 a["3d"]["BackgroundTransparency"] = 1
 a["3d"]["Size"] = UDim2.new(0.5, 0, 1, 0)
@@ -390,7 +395,7 @@ a["3e"]["BorderSizePixel"] = 0
 a["3e"]["TextSize"] = 14
 a["3e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 a["3e"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["3e"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 a["3e"]["BackgroundTransparency"] = 1
 a["3e"]["AnchorPoint"] = Vector2.new(1, 0)
@@ -497,7 +502,7 @@ a["4f"]["BorderSizePixel"] = 0
 a["4f"]["TextSize"] = 14
 a["4f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 a["4f"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["4f"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 a["4f"]["BackgroundTransparency"] = 1
 a["4f"]["Size"] = UDim2.new(1, 0, 1, 0)
@@ -574,7 +579,7 @@ a["5c"]["TextSize"] = 14
 a["5c"]["TextXAlignment"] = Enum.TextXAlignment.Left
 a["5c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 a["5c"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/RobotoMono.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/RobotoMono.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["5c"]["TextColor3"] = Color3.fromRGB(2555, 2555, 2555)
 a["5c"]["BackgroundTransparency"] = 1
 a["5c"]["Size"] = UDim2.new(1, 0, 1, 0)
@@ -616,7 +621,7 @@ a["63"]["TextSize"] = 12
 a["63"]["TextXAlignment"] = Enum.TextXAlignment.Left
 a["63"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 a["63"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["63"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 a["63"]["BackgroundTransparency"] = 1
 a["63"]["Size"] = UDim2.new(0, 61, 1, 0)
@@ -633,7 +638,7 @@ a["66"]["TextXAlignment"] = Enum.TextXAlignment.Left
 a["66"]["TextYAlignment"] = Enum.TextYAlignment.Bottom
 a["66"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 a["66"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["66"]["TextColor3"] = Color3.fromRGB(201, 201, 201)
 a["66"]["BackgroundTransparency"] = 1
 a["66"]["Size"] = UDim2.new(1, 0, 1, 0)
@@ -670,10 +675,10 @@ a["6c"]["Text"] = [[HH]]
 a["6d"] = Instance.new("UIGradient", a["6c"])
 a["6d"]["Rotation"] = 45
 a["6d"]["Color"] =
-    ColorSequence.new {
-    ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),
-    ColorSequenceKeypoint.new(1.000, Color3.fromRGB(212, 34, 255))
-}
+	ColorSequence.new {
+		ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 255, 255)),
+		ColorSequenceKeypoint.new(1.000, Color3.fromRGB(212, 34, 255))
+	}
 a["6e"] = Instance.new("UIPadding", a["69"])
 a["6e"]["PaddingRight"] = UDim.new(0, 1)
 a["6e"]["PaddingBottom"] = UDim.new(0, 1)
@@ -692,7 +697,7 @@ a["71"]["TextSize"] = 12
 a["71"]["TextXAlignment"] = Enum.TextXAlignment.Left
 a["71"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 a["71"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["71"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 a["71"]["BackgroundTransparency"] = 1
 a["71"]["Size"] = UDim2.new(0, 43, 1, 0)
@@ -744,7 +749,7 @@ a["7a"]["TextSize"] = 14
 a["7a"]["TextXAlignment"] = Enum.TextXAlignment.Left
 a["7a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 a["7a"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/RobotoMono.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/RobotoMono.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["7a"]["TextColor3"] = Color3.fromRGB(2555, 2555, 2555)
 a["7a"]["BackgroundTransparency"] = 1
 a["7a"]["Size"] = UDim2.new(1, 0, 1, 0)
@@ -792,7 +797,7 @@ a["82"]["BorderSizePixel"] = 0
 a["82"]["TextSize"] = 14
 a["82"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 a["82"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/RobotoMono.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/RobotoMono.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["82"]["TextColor3"] = Color3.fromRGB(2555, 2555, 2555)
 a["82"]["BackgroundTransparency"] = 1
 a["82"]["Size"] = UDim2.new(1, 0, 1, 0)
@@ -840,7 +845,7 @@ a["89"]["TextSize"] = 14
 a["89"]["TextXAlignment"] = Enum.TextXAlignment.Right
 a["89"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 a["89"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/RobotoMono.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/RobotoMono.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["89"]["TextColor3"] = Color3.fromRGB(2555, 2555, 2555)
 a["89"]["BackgroundTransparency"] = 1
 a["89"]["Size"] = UDim2.new(1, 0, 1, 0)
@@ -865,7 +870,7 @@ a["8e"]["TextSize"] = 14
 a["8e"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
 a["8e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 a["8e"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["8e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
 a["8e"]["Text"] = [[]]
 a["8e"]["Name"] = [[Modal]]
@@ -898,7 +903,7 @@ a["93"]["TextSize"] = 14
 a["93"]["TextXAlignment"] = Enum.TextXAlignment.Left
 a["93"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 a["93"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["93"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 a["93"]["BackgroundTransparency"] = 1
 a["93"]["AnchorPoint"] = Vector2.new(0, 0.5)
@@ -921,7 +926,7 @@ a["95"]["BorderSizePixel"] = 0
 a["95"]["TextSize"] = 14
 a["95"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 a["95"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["95"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 a["95"]["BackgroundTransparency"] = 1
 a["95"]["Size"] = UDim2.new(1, 0, 1, 0)
@@ -944,10 +949,10 @@ a["97"]["BorderSizePixel"] = 0
 a["97"]["TextSize"] = 14
 a["97"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 a["97"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["97"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 a["97"]["BackgroundTransparency"] = 1
-a["97"]["Size"] = UDim2.new(1, 0, 0.333, 0)
+a["97"]["Size"] = UDim2.new(1, 0, 0.25, 0)
 a["97"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
 a["97"]["Text"] = [[Hold]]
 a["97"]["Name"] = [[1_Hold]]
@@ -956,10 +961,10 @@ a["98"]["BorderSizePixel"] = 0
 a["98"]["TextSize"] = 14
 a["98"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 a["98"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["98"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 a["98"]["BackgroundTransparency"] = 1
-a["98"]["Size"] = UDim2.new(1, 0, 0.333, 0)
+a["98"]["Size"] = UDim2.new(1, 0, 0.25, 0)
 a["98"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
 a["98"]["Text"] = [[Dynamic]]
 a["98"]["Name"] = [[3_Dynamic]]
@@ -969,13 +974,25 @@ a["9a"]["BorderSizePixel"] = 0
 a["9a"]["TextSize"] = 14
 a["9a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 a["9a"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["9a"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 a["9a"]["BackgroundTransparency"] = 1
-a["9a"]["Size"] = UDim2.new(1, 0, 0.333, 0)
+a["9a"]["Size"] = UDim2.new(1, 0, 0.25, 0)
 a["9a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
 a["9a"]["Text"] = [[Toggle]]
 a["9a"]["Name"] = [[2_Toggle]]
+a["8a6"] = Instance.new("TextLabel", a["96"])
+a["8a6"]["BorderSizePixel"] = 0
+a["8a6"]["TextSize"] = 14
+a["8a6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+a["8a6"]["FontFace"] =
+	Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+a["8a6"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+a["8a6"]["BackgroundTransparency"] = 1
+a["8a6"]["Size"] = UDim2.new(1, 0, 0.25, 0)
+a["8a6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+a["8a6"]["Text"] = [[Always]]
+a["8a6"]["Name"] = [[4_always]]
 a["9b"] = Instance.new("UIStroke", a["94"])
 a["9b"]["Color"] = Color3.fromRGB(255, 255, 255)
 a["9c"] = Instance.new("Folder", a["3"])
@@ -995,7 +1012,7 @@ a["9e"]["TextXAlignment"] = Enum.TextXAlignment.Left
 a["9e"]["TextYAlignment"] = Enum.TextYAlignment.Top
 a["9e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 a["9e"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["9e"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 a["9e"]["BackgroundTransparency"] = 1
 a["9e"]["Size"] = UDim2.new(1, -5, 1, 0)
@@ -1020,7 +1037,7 @@ a["a2"]["BorderSizePixel"] = 0
 a["a2"]["TextSize"] = 14
 a["a2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
 a["a2"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["a2"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 a["a2"]["BackgroundTransparency"] = 1
 a["a2"]["Size"] = UDim2.new(1, 0, 1, 0)
@@ -1062,7 +1079,7 @@ a["a9"]["TextSize"] = 14
 a["a9"]["TextXAlignment"] = Enum.TextXAlignment.Left
 a["a9"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 a["a9"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["a9"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 a["a9"]["BackgroundTransparency"] = 1
 a["a9"]["Size"] = UDim2.new(1, -18, 1, 0)
@@ -1107,7 +1124,7 @@ a["af"]["TextSize"] = 14
 a["af"]["TextXAlignment"] = Enum.TextXAlignment.Left
 a["af"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
 a["af"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["af"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 a["af"]["BackgroundTransparency"] = 1
 a["af"]["Size"] = UDim2.new(1, -8, 1, -23)
@@ -1171,7 +1188,7 @@ a["ba"]["TextSize"] = 14
 a["ba"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 a["ba"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 a["ba"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["ba"]["ClearTextOnFocus"] = false
 a["ba"]["Size"] = UDim2.new(1, 0, 1, 0)
 a["ba"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
@@ -1195,7 +1212,7 @@ a["bd"]["TextSize"] = 14
 a["bd"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 a["bd"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 a["bd"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["bd"]["ClearTextOnFocus"] = false
 a["bd"]["Size"] = UDim2.new(1, 0, 1, 0)
 a["bd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
@@ -1353,11 +1370,11 @@ a["d8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
 a["d8"]["Name"] = [[fill]]
 a["d9"] = Instance.new("UIGradient", a["d8"])
 a["d9"]["Transparency"] =
-    NumberSequence.new {
-    NumberSequenceKeypoint.new(0.000, 0),
-    NumberSequenceKeypoint.new(0.000, 1),
-    NumberSequenceKeypoint.new(1.000, 0)
-}
+	NumberSequence.new {
+		NumberSequenceKeypoint.new(0.000, 0),
+		NumberSequenceKeypoint.new(0.000, 1),
+		NumberSequenceKeypoint.new(1.000, 0)
+	}
 a["da"] = Instance.new("Frame", a["b6"])
 a["da"]["BorderSizePixel"] = 0
 a["da"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
@@ -1409,7 +1426,7 @@ a["e1"]["TextSize"] = 14
 a["e1"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 a["e1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 a["e1"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["e1"]["ClearTextOnFocus"] = false
 a["e1"]["Size"] = UDim2.new(1, 0, 1, 0)
 a["e1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
@@ -1433,7 +1450,7 @@ a["e4"]["TextSize"] = 14
 a["e4"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 a["e4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 a["e4"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["e4"]["ClearTextOnFocus"] = false
 a["e4"]["Size"] = UDim2.new(1, 0, 1, 0)
 a["e4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
@@ -1640,7 +1657,7 @@ a["108"]["TextSize"] = 14
 a["108"]["TextXAlignment"] = Enum.TextXAlignment.Left
 a["108"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 a["108"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["108"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 a["108"]["BackgroundTransparency"] = 1
 a["108"]["AnchorPoint"] = Vector2.new(0, 0.5)
@@ -1655,7 +1672,7 @@ a["109"]["TextSize"] = 14
 a["109"]["TextXAlignment"] = Enum.TextXAlignment.Left
 a["109"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 a["109"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["109"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 a["109"]["BackgroundTransparency"] = 1
 a["109"]["AnchorPoint"] = Vector2.new(0, 0.5)
@@ -1697,7 +1714,7 @@ a["10f"]["TextSize"] = 14
 a["10f"]["TextXAlignment"] = Enum.TextXAlignment.Left
 a["10f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 a["10f"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["10f"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 a["10f"]["BackgroundTransparency"] = 1
 a["10f"]["Size"] = UDim2.new(1, -23, 1, 0)
@@ -1736,23 +1753,25 @@ a["113"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
 a["113"]["BackgroundTransparency"] = 1
 a["114"] = Instance.new("Model", a["113"])
 a["114"]["Name"] = [[Rig]]
-local b = game:GetObjects("rbxassetid://623773712")[1]
+local b = runS:IsStudio() and script["rbxassetid://623773712"] or game:GetObjects("rbxassetid://623773712")[1]
+
 b.HumanoidRootPart.Anchored = true
 b.Parent = workspace
 b.HumanoidRootPart.CFrame = CFrame.new(0, 100, 0)
 task.wait()
 b.Humanoid:Destroy()
 for c, d in ipairs(b:GetChildren()) do
-    d.Anchored = true
-    if d.Name ~= "Head" then
-        d:ClearAllChildren()
-    else
-        for c, d in ipairs(d:GetChildren()) do
-        end
-    end
-    d.Parent = a["114"]
+	d.Anchored = true
+	if d.Name ~= "Head" then
+		d:ClearAllChildren()
+	else
+		for c, d in ipairs(d:GetChildren()) do
+		end
+	end
+	d.Parent = a["114"]
 end
 b:Destroy()
+
 a["126"] = Instance.new("Part", a["114"])
 a["126"]["BottomSurface"] = Enum.SurfaceType.Smooth
 a["126"]["CanCollide"] = false
@@ -1944,7 +1963,7 @@ a["14b"]["TextSize"] = 14
 a["14b"]["TextXAlignment"] = Enum.TextXAlignment.Left
 a["14b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
 a["14b"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["14b"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 a["14b"]["BackgroundTransparency"] = 1
 a["14b"]["Size"] = UDim2.new(1, -8, 1, -23)
@@ -2028,7 +2047,7 @@ a["159"]["BorderSizePixel"] = 0
 a["159"]["TextSize"] = 14
 a["159"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 a["159"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["159"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 a["159"]["BackgroundTransparency"] = 1
 a["159"]["Size"] = UDim2.new(1, 0, 1, 0)
@@ -2051,7 +2070,7 @@ a["15c"]["TextSize"] = 14
 a["15c"]["TextXAlignment"] = Enum.TextXAlignment.Left
 a["15c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
 a["15c"]["FontFace"] =
-    Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+	Font.new([[rbxasset://fonts/families/Ubuntu.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 a["15c"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
 a["15c"]["BackgroundTransparency"] = 1
 a["15c"]["Size"] = UDim2.new(1, -8, 1, -23)
